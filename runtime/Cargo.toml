@@ -53,6 +53,9 @@ std = [
     'sp-std/std',
     'sp-transaction-pool/std',
     'sp-version/std',
+
+    # Korkhann: hkc pallet
+    'pallet-hkc/std',
 ]
 [dependencies.codec]
 default-features = false
@@ -219,4 +222,10 @@ version = '3.0.0'
 default-features = false
 git = 'https://github.com/paritytech/substrate.git'
 tag = 'monthly-2021-07'
+version = '3.0.0'
+
+# Korkhann: hkc dependencies
+[dependencies.pallet-hkc]
+default-features = false
+path = '../pallets/hkc'
 version = '3.0.0'
